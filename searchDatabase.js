@@ -20,7 +20,7 @@ function getRecordCustomerInfo() {
             var queryResult;
             for (var i = 0; i < response.length; i++) {
               queryResult += 
-              " Name: " + response[i].Name + ". "
+              "<br> " + (i+1) +" - Name: " + response[i].Name + ". "
               + " Age: " + " " + response[i].Age + ". "
               + " Email: " + " " + response[i].Email + ". "
               + " Gender: " + " " + response[i].Gender + ". "
@@ -29,7 +29,7 @@ function getRecordCustomerInfo() {
               + " Shopping: " + " " + trueYes(response[i].Shopping) + ". "
               + " Technology: " + " " + trueYes(response[i].Technology) + ". "
               + " Business: " + " " + trueYes(response[i].Business) + ". "
-              + " Lifestyle: " + " " + trueYes(response[i].Lifestyle) + ". "
+              + " Lifestyle: " + " " + trueYes(response[i].Lifestyle) + ". " 
               + "<br> ";
             }
 
