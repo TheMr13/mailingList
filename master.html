@@ -1,0 +1,49 @@
+<html>
+        <head>
+                
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                    <meta name="description" content="">
+                    <meta name="author" content="">
+                
+                    <title>Master Login Page</title>
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                
+                    <!-- Custom styles for this template -->
+                    
+                
+                  </head>
+                  <body style="background-image:url('black-and-gray-wallpaper21.jpg');">
+
+<section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto"><br><br><br>
+            <h2 style="color: white">Master Login</h2>
+            <section id="loginBox">
+            
+           
+           <form method="post" class="minimal">
+               <label for="username" style="color:white;">
+                   Master Username:
+                   <input type="text" id="namemast"name="username" id="username"  
+                   pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required"/><br>
+               </label><br><br>
+       
+               <label for="password" style="color:white;">
+                   Master Password:
+                   <input type="password" id="passwordmast"name="password" id="password"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" 
+                   required="required" /><br>
+               </label><br><br>
+                <button class="btn btn-success"  onclick="document.getElementById('id01').style.display='block'">Login</button>
+           </form>
+       </section>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    </body>
+    </html>

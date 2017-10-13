@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Auckland 20s &amp 30s</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <!-- Logic -->
+    <script src="login.js"></script>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#subscribe">Subscribe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Admin Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="file:///Users/vaishalisingh/Desktop/startbootstrap-grayscale-gh-pages/master.html" class="btn btn-default btn-lg">Master Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Auckland<span style="color:rgba(241, 31, 31, 0.64)"> <br>20's & 30's</span> <br></h1>
+              <h2>social group</h2>
+              <p class="intro-text"> one of the most popular and active social groups for young people in New Zealand.</p>
+              <a href="subscribe.html" class="btn btn-default btn-lg">Subscribe For Updates</a><br>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>About us</h2>
+            <p>The group is for people looking to meet others in their 20s and 30s and have fun together. Please note that this is not a dating group though, we offer a safe environment to meet new people and make friends.</p>
+            <p>Whether you are new to Auckland, a busy working professional, or simply keen to try new activities it all boils down to the same thing – finding a group of like minded people and finding it fast.</p>
+            <p>We run a huge variety of events on a regular basis including drinks, theatre, pool, yoga, salsa, tennis, rock climbing, brunch, food events, art exhibitions, sketching, bingo social nights, quiz nights and girls mingle events. 
+                <br>We're a not for profit group run entirely by voluntary organisers. <br><br>To know more about us, please visit:</p>
+                <p>
+                  <a href=></a>
+                  </p>
+                <ul class="list-inline banner-social-buttons">
+                  <li class="list-inline-item">
+                    <a href="https://www.facebook.com/groups/191781411352348/" class="btn btn-default btn-lg">
+                      <i class="fa fa-facebook fa-fw"></i>
+                      <span class="network-name">Facebook</span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.meetup.com/Auckland20s30sSocialGroup/" class="btn btn-default btn-lg">
+                      <i class="fa fa-meetup fa-fw"></i>
+                      <span class="network-name">Meetup</span>
+                    </a>
+                  </li>
+                
+                  </li>
+                </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section id="subscribe" class="subscribe-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h2>Subscribe</h2>
+          <p>You can subscribe to our newsletter to recieve the lastest news and upcoming events.</p>
+          <a href="subscribe.html" class="btn btn-default btn-lg">Subscribe For Updates</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admin Login Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Admin Login</h2>
+            <section id="loginBox">
+            
+           
+           <div method="post" class="minimal">
+               <label for="username">
+                   Username:
+                   <input type="text" id="username"name="username"   
+                   required="required"  /><br>
+               </label><br><br>
+       
+               <label for="password">
+                   Password:
+                   <input type="password" id="password"name="password"    
+                   required="required" /><br>
+                   <p id="passCheck"></p>
+               </label><br><br>
+               <button  id="signin" class="btn btn-default btn-lg" onclick="getInfoAndCheckPassword()">Sign in</button>
+              </div>
+       </section>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; Your Website 2017</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+  </body>
+
+</html>

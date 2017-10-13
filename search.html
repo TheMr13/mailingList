@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Auckland 20s &amp 30s- Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+
+    <!-- Logic -->
+    <script src="searchDatabase.js"></script>
+    
+  </head>
+
+  <body style="background-image:url('water.png');">
+
+    
+    <div class="container" style="padding-top:80px;">
+        <div class="row">
+            <br>
+               <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2" style="background-color:rgba(0, 0, 0, 0.53);padding:10px;"> 
+                    <h2 style=color:#B91818;>Members Informations</h2><br>
+                    <div class="form" style=color:#FDFCFC;font-size:25>
+                            <div class="form-gruop">
+                                <label> Full name</label>
+                                <input type="text" class="form-control" id="nameser"  placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label>E-mail:</label>
+                                <input type="text" class="form-control" id="emailser" placeholder="Enter your email">
+                            </div>
+                           
+                            <div class="form-group">
+                                <label>Age:</label>
+                                <input type="text" class="form-control" id="ageser" placeholder="Enter your age">
+                            </div>
+                            <div class="form-group">
+                                <label>Gender:</label>
+                                <input type="radio" id="anyser" name="gender" value="male" checked> Any
+                                <input type="radio" id="maleser" name="gender" value="male" > Male
+                                <input type="radio" id="femaleser" name="gender" value="female"> Female
+                                <input type="radio" id="otherser" name="gender" value="other"> Other
+                    
+                            </div>
+                            <div class="form-group">
+                                <label>Categories:</label>
+                    
+                                        &nbsp;<input type="checkbox" id="enterser" name="category1" value="Entertainment"> Entertainment
+                                        &nbsp;<input type="checkbox" id="sportser" name="category2" value="Sports"> Sports
+                                       &nbsp; <input type="checkbox" id="shopser" name="category3" value="Shopping"> Shopping
+                                       &nbsp; <input type="checkbox" id="techser" name="category4" value="Technology"> Technology
+                                      &nbsp;  <input type="checkbox" id="busser" name="category5" value="Business"> Business
+                                       &nbsp; <input type="checkbox" id="lifeser" name="category6" value="Life style"> Life style
+                                
+                            </div>
+                            <div class="form-group">
+                                <label>Search type</label>
+                            <input type="radio" id="orser"name="or" value="or" checked>&nbsp;Or
+                            &nbsp;<input type="radio" id="andser"name="and" value="and">&nbsp;And<br><br><hr>
+                            <div>
+                            <button class="btn btn-info"  id="submitsub"onclick= "getRecordCustomerInfo()">Get Data</button>
+                            <button class="btn btn-minimal" id="homeButtonSearchPage"><a href="index.html">Home</a></button>
+                            
+                            </div>
+
+                           
+
+                            <p id="searchResult"></p>
+
+                    
+                </div> 
+                 
+        </div>
+        
+    
+    
+  </body>
+  
+</html>

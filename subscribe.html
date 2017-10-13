@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Auckland 20s &amp 30s- Subscribe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Logic -->
+    <script src="sendToDatabase.js"></script>
+
+    <!-- Custom styles for this template -->
+
+    
+    
+
+  </head>
+
+  <body style="background-image:url('water.png');">
+
+    
+    <div class="container" style="padding-top:80px;">
+        <div class="row">
+               <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2" style="background-color:rgba(0, 0, 0, 0.53);padding:10px;"> 
+                <h2 style= color:white;> <span style="color:rgba(241, 31, 31, 0.64)">Subscribe</span> for latest newsletters <span style="color:rgba(241, 31, 31, 0.64)">&</span> upcoming events.</h2><br>
+                    <div class="form" style=color:#FCFCFC;font-size:25>
+                            <div class="form-gruop">
+                                <label> Full name</label>
+                                <input type="text" class="form-control" id="namesub"  placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label>E-mail:</label>
+                                <input type="text" class="form-control" id="emailsub" placeholder="Enter your email">
+                            </div>
+                           
+                            <div class="form-group">
+                                <label>Age:</label>
+                                <input type="text" class="form-control" id="agesub" placeholder="Enter your age">
+                            </div>
+                            <div class="form-group">
+                                <label>Gender:</label>
+                                <input type="radio" id="malesub" name="gender" value="male" checked> Male
+                                <input type="radio" id="femalesub" name="gender" value="female"> Female
+                                <input type="radio" id="othersub" name="gender" value="other"> Other
+                    
+                            </div>
+                            <div class="form-group">
+                                <label>Categories:</label>
+                    
+                                        &nbsp;<input type="checkbox" id="entersub" name="category1" value="Entertainment"> Entertainment
+                                        &nbsp;<input type="checkbox" id="sportsub" name="category2" value="Sports"> Sports
+                                       &nbsp; <input type="checkbox" id="shopsub" name="category3" value="Shopping"> Shopping
+                                       &nbsp; <input type="checkbox" id="techsub" name="category4" value="Technology"> Technology
+                                      &nbsp;  <input type="checkbox" id="bussub" name="category5" value="Business"> Business
+                                       &nbsp; <input type="checkbox" id="lifesub" name="category6" value="Life style"> Life style
+                                
+                            </div>
+                            
+                            
+                            <button class="btn btn-info"  id="submitsub" onclick=" setVariables(), getInputValues (), saveToStorage(), postRecordCustomerInfo()">Submit</button>
+                            <button class="btn btn-minimal" id="homeButtonSearchPage"><a href="index.html">Home</a></button>
+                            
+                            <p></p>
+                            <p id = "confirmation"></p>
+                        </div>
+
+                </div> 
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p style="color: #BDBDBD">Copyright &copy; The Best Group Ever 2017</p>
+      </div>
+    </footer>
+
+    
+  </body>
+
+</html>
