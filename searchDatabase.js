@@ -19,16 +19,17 @@ function getRecordCustomerInfo() {
 
             var queryResult;
             for (var i = 0; i < response.length; i++) {
-              queryResult += response[i].Name 
-              + " " + response[i].Age 
-              + " " + response[i].Email 
-              + " " + response[i].Gender 
-              + " " + response[i].Entertainment
-              + " " + response[i].Sport 
-              + " " + response[i].Shopping 
-              + " " + response[i].Technology 
-              + " " + response[i].Business 
-              + " " + response[i].Lifestyle 
+              queryResult += 
+              " Name: " + response[i].Name + ". "
+              + " Age: " + " " + response[i].Age + ". "
+              + " Email: " + " " + response[i].Email + ". "
+              + " Gender: " + " " + response[i].Gender + ". "
+              + " Entertainment: " + " " + trueYes(response[i].Entertainment) + ". "
+              + " Sport: " + " " + trueYes(response[i].Sport) + ". "
+              + " Shopping: " + " " + trueYes(response[i].Shopping) + ". "
+              + " Technology: " + " " + trueYes(response[i].Technology) + ". "
+              + " Business: " + " " + trueYes(response[i].Business) + ". "
+              + " Lifestyle: " + " " + trueYes(response[i].Lifestyle) + ". "
               + "<br> ";
             }
 
@@ -37,6 +38,14 @@ function getRecordCustomerInfo() {
                 document.getElementById("searchResult").innerHTML = "There are no results that match your search"
             } else {
                 document.getElementById("searchResult").innerHTML = queryResult;
+            }
+
+            function trueYes (input){
+                if (input == true) {
+                    return "yes";
+                } else if (input == false) {
+                    return "no";
+                }
             }
         }
     };
